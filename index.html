@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>How Far?</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="assests/css/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Manrope&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <section id="main-section" class="min-vh-100">
+        <div class="container-fluid">
+            <nav class="navbar bg-white ">
+                <span class="navbar-brand mb-0 h1"><i class="far fa-compass"></i>How Far?</span>
+            </nav>
+            <div class="row no-gutters">
+                <div id="form-col" class="col-md-4">
+                    <div id="header-form-col">
+                        <h2>Where are we headed today?</h2>
+                        <p>Enter any destination from the dropdown <br> and fill in inputs to see how far you can go!
+                        </p>
+                        <hr>
+                    </div>
+                    <form novalidate id="main-form" action="" onsubmit="return false">
+                        <div id="select-panel">
+                            <b><i class="far fa-dot-circle"></i></b>
+                            <select id="start">
+                                <option value="">Enter Destination</option>
+                                <option value="vancouver, bc">Vancouver</option>
+                                <option value="seattle, wa">Seattle</option>
+                                <option value="portland, or">Portland</option>
+                                <option value="san francisco, ca">San Francisco</option>
+                                <option value="san jose, ca">San Jose</option>
+                                <option value="san diego, ca">San Diego</option>
+                                <option value="oakland, ca">Oakland</option>
+                                <option value="long beach, ca">Long Beach</option>
+                                <option value="anaheim, ca">Anaheim</option>
+                                <option value="barstow, ca">Barstow</option>
+                                <option value="san bernardino, ca">San Bernardino</option>
+                                <option value="los angeles, ca">Los Angeles</option>
+                            </select>
+                            <br>
+                            <b><i class="fas fa-map-marker-alt"></i></b>
+                            <select id="end">
+                                <option value="">Enter Destination</option>
+                                <option value="vancouver, bc">Vancouver</option>
+                                <option value="seattle, wa">Seattle</option>
+                                <option value="portland, or">Portland</option>
+                                <option value="san francisco, ca">San Francisco</option>
+                                <option value="san jose, ca">San Jose</option>
+                                <option value="san diego, ca">San Diego</option>
+                                <option value="oakland, ca">Oakland</option>
+                                <option value="long beach, ca">Long Beach</option>
+                                <option value="anaheim, ca">Anaheim</option>
+                                <option value="barstow, ca">Barstow</option>
+                                <option value="san bernardino, ca">San Bernardino</option>
+                                <option value="los angeles, ca">Los Angeles</option>
+                            </select>
+                        </div>
+                        <!-- <div class="form-group">
+                            <label for="dis">Distance</label>
+                            <input class="form-control" id="dis" type="text" placeholder="Enter Distance" required>
+                        </div> -->
+                        <div class="form-group">
+                            <label for="lKm">Milage(L/100KM)</label>
+                            <input type="text" pattern="\d*" class="form-control" id="lKm"
+                                placeholder="Enter your milage" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="tank">Tank size in liters</label>
+                            <input type="text" pattern="\d*" class="form-control" id="tank"
+                                placeholder=" Enter only liters" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="percent">Fuel Level %</label>
+                            <input type="text" pattern="\d*" id="percent" class="form-control" placeholder="Enter in %"
+                                required>
+                        </div>
+                        <button type="submit" id="button" class="btn btn-primary btn-lg">Launch</button>
+                    </form>
+                    <div id="down-arrow">
+                        <i id="slide-down" class="fas fa-angle-down"></i>
+                    </div>
+                    <div id="outputDis">
+                        <div class="output" id="output-start"></div>
+                        <div class="output" id="output-end"></div>
+                        <div id="dis-dur"></div>
+                        <div id="calc-result"></div>
+                    </div>
+                </div>
+                <!--col-left-->
+                <div class="col-md-8">
+                    <!--col-right-->
+                    <div id="map"></div>
+                </div>
+            </div>
+            <!--row-->
+        </div>
+        <!--Container-->
+    </section>
+
+
+
+    <script src="assests/js/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCd4t_X0Aeuzwzak79kysAB29aSnAtTTW8&callback=initMap"
+        async defer></script>
+    <script src="assests/js/main.js"></script>
+</body>
+
+</html>

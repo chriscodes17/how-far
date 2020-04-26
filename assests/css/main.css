@@ -1,0 +1,105 @@
+#map {
+  height: calc(100vh - 55.6px);
+  width: auto;
+  position: fixed;
+}
+
+#form-col {
+  height: calc(100vh - 55.6px);
+  color: black;
+  border-right: solid 4px rgba(186, 187, 183, 0.7);
+}
+
+.fa-compass {
+  padding-left: 2px;
+  padding-right: 8px;
+  font-size: 25px;
+}
+
+body {
+  font-family: "Manrope", sans-serif;
+}
+
+#header-form-col {
+  text-align: center;
+}
+
+#header-form-col h2 {
+  margin-top: 25px;
+}
+
+#header-form-col p {
+  margin-top: 25px;
+  padding: 0px 30px 0px 30px;
+  font-size: 16px;
+}
+
+#header-form-col hr {
+  margin-top: 15px;
+  width: 75%;
+  border: none;
+  height: 2px;
+  background-color: rgba(186, 187, 183, 0.7);
+}
+
+.form-group .form-control {
+  width: 40%;
+  margin: 0 auto;
+  border-radius: 20px;
+}
+
+.btn-primary {
+  border-radius: 20px;
+  margin-top: 10px;
+}
+
+.btn-danger {
+  border-radius: 20px;
+  margin-top: 10px;
+}
+
+#down-arrow {
+  text-align: center;
+  font-size: 25px;
+}
+
+form {
+  text-align: center;
+}
+
+#form-col {
+  overflow-y: auto;
+}
+
+#select-panel {
+  margin-bottom: 12px;
+}
+
+b {
+  margin-right: 4px;
+}
+
+#end {
+  margin-left: 4px;
+  margin-top: 6px;
+}
+
+select {
+  width: 153.2px;
+  margin-bottom: 16px;
+}
+
+.output {
+  font-size: 18px;
+  padding: 4px;
+}
+
+#outputDis {
+  text-align: center;
+  display: inline;
+}
+
+#dis-dur {
+  font-weight: bold;
+  margin-top: 16px;
+}
